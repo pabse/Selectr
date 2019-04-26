@@ -1989,6 +1989,8 @@
 
         string = string.trim().toLowerCase();
 
+        this.emit("selectr.search", string);
+
         if ( string.length > 0 ) {
             var compare = anchor ? util.startsWith : util.includes;
 
